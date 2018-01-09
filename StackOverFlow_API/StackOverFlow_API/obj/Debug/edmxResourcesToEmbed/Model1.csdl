@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StackoverflowModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Isim" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Soyisim" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Soru" Relationship="Self.FK_Soru_Kullanici" FromRole="Kullanici" ToRole="Soru" />
+  </EntityType>
+  <EntityType Name="Soru">
+    <Key>
+      <PropertyRef Name="SoruID" />
+    </Key>
+    <Property Name="SoruID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Baslik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Icerik" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="KullaniciID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Kullanici" Relationship="Self.FK_Soru_Kullanici" FromRole="Soru" ToRole="Kullanici" />
+    <NavigationProperty Name="Cevap" Relationship="Self.FK_Cevap_Soru" FromRole="Soru" ToRole="Cevap" />
+  </EntityType>
+  <EntityType Name="Cevap">
+    <Key>
+      <PropertyRef Name="SoruID" />
+      <PropertyRef Name="CevapID" />
+    </Key>
+    <Property Name="SoruID" Type="Int32" Nullable="false" />
+    <Property Name="CevapID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CevapIcerik" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="Soru" Relationship="Self.FK_Cevap_Soru" FromRole="Cevap" ToRole="Soru" />
+  </EntityType>
+  <Association Name="FK_Soru_Kullanici">
+    <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="1" />
+    <End Role="Soru" Type="Self.Soru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kullanici">
+        <PropertyRef Name="KullaniciID" />
+      </Principal>
+      <Dependent Role="Soru">
+        <PropertyRef Name="KullaniciID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cevap_Soru">
+    <End Role="Soru" Type="Self.Soru" Multiplicity="1" />
+    <End Role="Cevap" Type="Self.Cevap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Soru">
+        <PropertyRef Name="SoruID" />
+      </Principal>
+      <Dependent Role="Cevap">
+        <PropertyRef Name="SoruID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StackoverflowEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" />
+    <EntitySet Name="Soru" EntityType="Self.Soru" />
+    <EntitySet Name="Cevap" EntityType="Self.Cevap" />
+    <AssociationSet Name="FK_Soru_Kullanici" Association="Self.FK_Soru_Kullanici">
+      <End Role="Kullanici" EntitySet="Kullanici" />
+      <End Role="Soru" EntitySet="Soru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cevap_Soru" Association="Self.FK_Cevap_Soru">
+      <End Role="Soru" EntitySet="Soru" />
+      <End Role="Cevap" EntitySet="Cevap" />
+    </AssociationSet>
+    <FunctionImport Name="SoruSil">
+      <Parameter Name="qID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CevapSil">
+      <Parameter Name="aID" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

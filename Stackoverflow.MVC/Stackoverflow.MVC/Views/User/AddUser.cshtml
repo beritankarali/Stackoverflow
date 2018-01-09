@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "AddUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="gap"></div>
+<div class="container">
+    <div class="row" style="margin-top:20px">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <form action="hede" role="form">
+                <fieldset>
+                    <h2>Kayıt Ol</h2>
+                    <hr class="colorgraph">
+                    <div class="form-group">
+                        <input type="text" name="username" id="username" class="form-control input-lg" placeholder="Kullanıcı Adı">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-control input-lg" placeholder="E-Posta">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-control input-lg" placeholder="İsim">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="surname" id="surname" class="form-control input-lg" placeholder="Soyad">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Şifre">
+                    </div>
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <input type="button" id="btnKaydol" class="btn btn-lg btn-success btn-block" value="Kayıt Ol">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <a href="/User/Login" class="btn btn-lg btn-primary btn-block">Giriş</a>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#btnKaydol").click(function () {
+        $.post("http://localhost:60023/api/user/add", {
+            KullaniciAd: $("#username").val(),
+            Sifre: $("#password").val(),
+            Isim: $("#name").val(),
+            Mail: $("#email").val(),
+            Soyisim: $("#surname").val()
+        }, function (data, status) {
+            if (data.Status == true)
+                alert("Kayıt Başarılı");
+            location.href = "/User/Login";
+        });
+    })
+</script>

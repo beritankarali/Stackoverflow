@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "ListQuestion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .add-button {
+        float: right;
+        margin: 10px 0;
+    }
+</style>
+
+<div class="comments-container">
+
+    <ul id="comments-list" class="comments-list"></ul>
+</div>
+
+<script>
+    //$(document).on('ready', function () {
+    //    $.get("http://localhost:60023/api/user/ListQuestion", function (data, status) {
+    //        $.get("http://localhost:60023/api/user/ListAnswer", function (data2, status2) {
+    //            var soru = '';
+    //            var cevap = '';
+    //            for (var i = 0; i < data.length; i++) {
+    //                soru = '<li><div class="comment-main-level"><div class="comment-box"><div class="comment-head"><h6 class="comment-name by-author"><a href="#">' + data[i].Baslik + '</a></h6><span>' + data[i].KullaniciID + '</span><i class="fa fa-reply"></i><i class="fa fa-heart"></i></div><div class="comment-content">' + data[i].Icerik + '</div></div></div>';
+    //                $('#comments-list').append(soru);
+    //                for (var j = 0; j < data2.length; j++) {
+    //                    cevap = '<ul class="comments-list reply-list"><li><div class="comment-box"><div class="comment-head"><h6 class="comment-name"><a href="#">' + data2[j].Baslik + '</a></h6><i class="fa fa-reply"></i><i class="fa fa-heart"></i></div><div class="comment-content">' + data2[j].Icerik + '</div></div></li></ul>';
+    //                    $('#comments-list').append(cevap);
+    //                }
+    //                $('#comments-list').append('</li>');
+    //            }
+    //        });
+    //    });
+    //});
+
+
+    $(document).on('ready', function () {
+        $.get("http://localhost:60023/api/user/ListQuestion", function (data, status) {
+            var soru = '';
+            var cevap = '';
+            for (var i = 0; i < data.length; i++) {
+                soru = '<li><div class="comment-main-level"><div class="comment-box"><div class="comment-head"><h6 class="comment-name by-author"><a href="#">' + data[i].Baslik + '</a></h6><span>' + data[i].KullaniciID + '</span><i class="fa fa-reply"></i><i class="fa fa-heart"></i></div><div class="comment-content">' + data[i].Icerik + '</div><input type="text" id="cevap-' + data[i].SoruID + '" class="form-control"><button class="add-button btn btn-primary" onclick="addAnswer(' + data[i].SoruID + ')">Cevap Ekle</button></div></div>';
+                $('#comments-list').append(soru);
+                for (var j = 0; j < data[i].CevapList.length; j++) {
+                    cevap = '<ul class="comments-list reply-list"><li><div class="comment-box"><div class="comment-head"><h6 class="comment-name"><a href="#">' + "Cevap " + (j + 1) + '</a></h6><i class="fa fa-reply"></i><i class="fa fa-heart"></i></div><div class="comment-content">' + data[i].CevapList[j] + '</div></div></li></ul>';
+                    $('#comments-list').append(cevap);
+                }
+                $('#comments-list').append('</li>');
+            }
+        });
+    });
+
+    function addAnswer(soruId) {
+        var answerText = $("#cevap-" + soruId).val();
+
+        if (answerText.length > 3) {
+            $.post("http://localhost:60023/api/user/addAnswer", {
+
+                CevapIcerik: answerText,
+                SoruID: soruId
+
+            }, function (data, status) {
+                console.log(data, status)
+            });
+
+        } else {
+            alert("Minimum 3 karakter girmelisiniz");
+        }
+
+
+    }
+</script>
+

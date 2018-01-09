@@ -1,0 +1,136 @@
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\ApplicationInsights.config
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csc.exe
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csc.exe.config
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csc.rsp
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csi.exe
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csi.rsp
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.AppContext.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\vbc.exe
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\vbc.exe.config
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\vbc.rsp
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\VBCSCompiler.exe
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Stackoverflow.MVC.dll.config
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Stackoverflow.MVC.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Stackoverflow.MVC.pdb
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Antlr3.Runtime.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.Web.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.ApplicationInsights.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Newtonsoft.Json.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Helpers.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Mvc.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Optimization.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Razor.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.Razor.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\WebGrease.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Helpers.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Mvc.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Optimization.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Razor.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.Razor.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Antlr3.Runtime.pdb
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Newtonsoft.Json.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.ApplicationInsights.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.Web.xml
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\obj\Debug\Stackoverflow.MVC.csprojResolveAssemblyReference.cache
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\obj\Debug\Stackoverflow.MVC.csproj.CoreCompileInputs.cache
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\obj\Debug\Stackoverflow.MVC.dll
+C:\Users\gulin\source\repos\Stackoverflow.MVC\Stackoverflow.MVC\obj\Debug\Stackoverflow.MVC.pdb
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\ApplicationInsights.config
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csc.exe
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csc.exe.config
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csc.rsp
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csi.exe
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\csi.rsp
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.AppContext.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\vbc.exe
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\vbc.exe.config
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\vbc.rsp
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\VBCSCompiler.exe
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Stackoverflow.MVC.dll.config
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Stackoverflow.MVC.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Stackoverflow.MVC.pdb
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Antlr3.Runtime.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.Web.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Newtonsoft.Json.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Helpers.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Mvc.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Optimization.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Razor.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.Razor.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\WebGrease.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Helpers.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Mvc.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Optimization.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.Razor.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\System.Web.WebPages.Razor.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Antlr3.Runtime.pdb
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Newtonsoft.Json.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\bin\Microsoft.AI.Web.xml
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\obj\Debug\Stackoverflow.MVC.csprojResolveAssemblyReference.cache
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\obj\Debug\Stackoverflow.MVC.csproj.CoreCompileInputs.cache
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\obj\Debug\Stackoverflow.MVC.dll
+C:\Users\Beritan Karali\Desktop\Stackoverflow.MVC\Stackoverflow.MVC\obj\Debug\Stackoverflow.MVC.pdb

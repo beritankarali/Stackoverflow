@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "AddQuestion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="gap"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <h5>Soru Başlığı</h5>
+                        <input type="text" name="title" id="txtBaslik" class="form-control input-lg" placeholder="Başlık">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="widget-area no-padding blank">
+                                <div class="status-upload">
+                                    <form>
+                                        <textarea placeholder="Ne düşünüyorsun?" id="txtIcerik"></textarea>
+
+                                        <button type="button" id="btnEkle" onclick="hede()" class="btn btn-success green"><i class="fa fa-share"></i> Sor</button>
+                                    </form>
+                                </div><!-- Status Upload  -->
+                            </div><!-- Widget Area -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <h4>Nasıl Sormalıyım</h4>
+                        <p>Böyle böyle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    function hede() {
+        var a = localStorage.getItem('userToken');
+        console.log(a);
+        $.post("http://localhost:60023/api/user/addQuestion", {
+            Baslik: $("#txtBaslik").val(),
+            Icerik: $("#txtIcerik").val(),
+            KullaniciID: a
+
+        }, function (data, status) {
+
+            if (status == 'success') {
+                alert("Kayıt Başarılı");
+                location.href = 'ListQuestion';
+            }
+        })
+    }
+</script>
+
+

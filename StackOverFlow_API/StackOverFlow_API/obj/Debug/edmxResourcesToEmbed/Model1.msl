@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StackoverflowModelStoreContainer" CdmEntityContainer="StackoverflowEntities">
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="StackoverflowModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="KullaniciAd" ColumnName="KullaniciAd" />
+          <ScalarProperty Name="Isim" ColumnName="Isim" />
+          <ScalarProperty Name="Soyisim" ColumnName="Soyisim" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Soru">
+      <EntityTypeMapping TypeName="StackoverflowModel.Soru">
+        <MappingFragment StoreEntitySet="Soru">
+          <ScalarProperty Name="SoruID" ColumnName="SoruID" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="Icerik" ColumnName="Icerik" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cevap">
+      <EntityTypeMapping TypeName="StackoverflowModel.Cevap">
+        <MappingFragment StoreEntitySet="Cevap">
+          <ScalarProperty Name="SoruID" ColumnName="SoruID" />
+          <ScalarProperty Name="CevapID" ColumnName="CevapID" />
+          <ScalarProperty Name="CevapIcerik" ColumnName="CevapIcerik" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SoruSil" FunctionName="StackoverflowModel.Store.SoruSil" />
+    <FunctionImportMapping FunctionImportName="CevapSil" FunctionName="StackoverflowModel.Store.CevapSil" />
+  </EntityContainerMapping>
+</Mapping>

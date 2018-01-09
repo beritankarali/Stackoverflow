@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StackoverflowModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Stackoverflow.dbo.Cevap' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Cevap">
+    <Key>
+      <PropertyRef Name="SoruID" />
+      <PropertyRef Name="CevapID" />
+    </Key>
+    <Property Name="SoruID" Type="int" Nullable="false" />
+    <Property Name="CevapID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CevapIcerik" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Count" Type="int" />
+  </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAd" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Isim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Soyisim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Soru">
+    <Key>
+      <PropertyRef Name="SoruID" />
+    </Key>
+    <Property Name="SoruID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Baslik" Type="nvarchar" MaxLength="50" />
+    <Property Name="Icerik" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Count" Type="int" />
+    <Property Name="KullaniciID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Cevap_Soru">
+    <End Role="Soru" Type="Self.Soru" Multiplicity="1" />
+    <End Role="Cevap" Type="Self.Cevap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Soru">
+        <PropertyRef Name="SoruID" />
+      </Principal>
+      <Dependent Role="Cevap">
+        <PropertyRef Name="SoruID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Soru_Kullanici">
+    <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="1" />
+    <End Role="Soru" Type="Self.Soru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kullanici">
+        <PropertyRef Name="KullaniciID" />
+      </Principal>
+      <Dependent Role="Soru">
+        <PropertyRef Name="KullaniciID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="CevapSil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="aID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SoruSil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="qID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="StackoverflowModelStoreContainer">
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Soru" EntityType="Self.Soru" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cevap" EntityType="Self.Cevap" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Cevap].[SoruID] AS [SoruID], 
+    [Cevap].[CevapID] AS [CevapID], 
+    [Cevap].[CevapIcerik] AS [CevapIcerik], 
+    [Cevap].[Count] AS [Count]
+    FROM [dbo].[Cevap] AS [Cevap]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Cevap_Soru" Association="Self.FK_Cevap_Soru">
+      <End Role="Soru" EntitySet="Soru" />
+      <End Role="Cevap" EntitySet="Cevap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Soru_Kullanici" Association="Self.FK_Soru_Kullanici">
+      <End Role="Kullanici" EntitySet="Kullanici" />
+      <End Role="Soru" EntitySet="Soru" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
